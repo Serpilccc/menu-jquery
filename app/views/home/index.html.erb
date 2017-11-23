@@ -1,38 +1,64 @@
 
 <!DOCTYPE html>
 <html>
+<link href = "https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css" rel = "stylesheet">   
+    <link href="home.scss" rel="stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 <head>
 	<title>menu</title>
 
 </head>
-<body>
 
-	<div id="content">
-	<div class="titre">
+</head>
+<body>
+	<div id="titre">
 	
 	<h1>Resto trop bien!</h1>
 
 	<h2>Miam ici on mange bien</h2>
 	</div>
 
-	<div class="picture">
+	<div id="picture">
 		<%= image_tag "resto.jpeg"%>
-
-
-</div>
-
- <div class="paragraph">
- 	<p>"Venez manger dans notre resto, nous préparons de merveilleux plats!"</p>
- </div>
-
-	<div class="rubrique">
-
+		<p>"Venez manger dans notre resto, nous préparons de merveilleux plats!"</p>
 	</div>
 
-  </div>
+	<div id="Presentation">
+		<input type="button"   value="Presentation">
+
+		<div class="pres" >
+			<p>Notre restaurant propose des plats indiens, colorés. Vous n'allez pas être décus du voyage!!</p>
+		</div>
+	</div>
+
+		<div id="Menu">
+		<input type="button"   value="Menu">
+
+		<div class="plats">
+			<ul><li>Poulet tandori</li></ul>
+			<ul><il> Poulet vindaloo</il></ul>
+			<ul><il>Tika massala<il></ul>
+			<ul><il>Chorba</il></ul>
+		</div>
+	</div>
+
+ <div id="Tarif">
+ 	<input type="button"   value="Menu">
+		<div class="tarifs" >
+			<ul><li>Poulet tandori=15 euros</li></ul>
+			<ul><il> Poulet vindaloo=8 euros</il></ul>
+			<ul><il>Tika massala= 5 euros<il></ul>
+			<ul><il>Chorba= 5 euros</il></ul>
+
+			
+		</div>
+	</div>
 
 <script type="text/javascript" src="index.js"> </script>
 
 </body>
 </html>
+
+
